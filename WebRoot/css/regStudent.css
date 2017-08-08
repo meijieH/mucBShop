@@ -1,0 +1,70 @@
+/*学生注册页面CSS样式 */
+body{
+	background: none;
+	background-color: #EFFAFF;
+}
+.container{
+	position: relative;
+}
+/*整个中间表单的样式*/
+.reg_form{
+	width: 70%;
+	/*border: solid 1px #036;
+	border-radius:10px;*/
+	margin-top: 30px;
+	margin-left: 14%;
+}
+.reg_form>p{
+    color:#3D6D82;
+    text-align:center;
+    margin:30px;
+}
+.reg_form ul li{
+    margin-bottom:10px;
+    clear: both;
+}
+.reg_form ul li label{
+    display: inline-block;
+    width: 30%;
+    color:#3D6D82;
+    text-align: right;
+    padding-right: 5px;
+}
+.reg_form ul li input{
+    border:double 1px #fff;
+    border-radius:4px;
+    width: 50%;  
+    padding:2px 5px; 
+}
+.reg_form ul li .login_button_login{
+	background-color:#003366;
+	color:white;
+    width:100px;
+    margin-left: 45%;
+    margin-top: 30px;
+}
+/*返回登录页面按钮的样式*/
+.reg_back{
+   position: absolute; 
+   top:50px; 
+   border:solid 10px white;
+   background-color: rgba(0,51,102,0.8);
+   border-radius:40px;
+}
+.reg_back a{
+   text-align:center;
+   line-height:60px;
+   display:block;
+   width: 60px;
+   height:60px;
+   color:white;
+}
+
+/* 候梅洁added */
+.reg_form ul li .login_button_login{
+	background-color:#02ba85;
+}
+.reg_back {
+	background-color:#02ba85;
+}
+

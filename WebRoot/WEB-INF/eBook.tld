@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.0" xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+	 <tlib-version>1.0</tlib-version>
+	 <short-name>eBook</short-name>
+	 <uri>/eBook</uri>
+ 	<!-- 带遮罩的网页对话框标签 -->
+ 	 <tag>
+ 	 	<description>带遮罩的网页对话框标签</description>
+ 	 	<name>msgdialog</name>
+ 	 	<tag-class>com.tld.MsgDialogTag</tag-class>
+ 	 	<body-content>scriptless</body-content>
+ 	 	<!-- 标签属性定义 -->
+ 	 	<attribute>
+ 	 		<description>对话框标题文字，默认为"温馨提示"</description>
+ 	 		<name>title</name>
+ 	 		<!-- 是否为必需属性 -->
+ 	 		<required>false</required>
+ 	 		<!-- 可以使用jsp表达式 -->
+ 	 		<rtexprvalue>true</rtexprvalue>
+ 	 	</attribute>
+ 	 	<attribute>
+ 	 		<description>遮罩的高度，默认为屏幕的高度，即100%</description>
+ 	 		<name>height</name>
+ 	 		<!-- 是否为必需属性 -->
+ 	 		<required>false</required>
+ 	 		<!-- 可以使用jsp表达式 -->
+ 	 		<rtexprvalue>true</rtexprvalue>
+ 	 	</attribute>
+ 	 	<attribute>
+ 	 		<description>对话框的顶部距离，默认为100px</description>
+ 	 		<name>top</name>
+ 	 		<!-- 是否为必需属性 -->
+ 	 		<required>false</required>
+ 	 		<!-- 可以使用jsp表达式 -->
+ 	 		<rtexprvalue>true</rtexprvalue>
+ 	 	</attribute>
+ 	 	<attribute>
+ 	 		<description>对话框的宽度，默认为500px</description>
+ 	 		<name>boxwidth</name>
+ 	 		<!-- 是否为必需属性 -->
+ 	 		<required>false</required>
+ 	 		<!-- 可以使用jsp表达式 -->
+ 	 		<rtexprvalue>true</rtexprvalue>
+ 	 	</attribute>
+ 	 	<attribute>
+ 	 		<description>基本URL</description>
+ 	 		<name>basepath</name>
+ 	 		<!-- 是否为必需属性 -->
+ 	 		<required>true</required>
+ 	 		<!-- 可以使用jsp表达式 -->
+ 	 		<rtexprvalue>true</rtexprvalue>
+ 	 	</attribute>
+ 	 </tag>
+ 	 
+ 	 <!-- 幻灯片书籍标签 -->
+ 	 <tag>
+ 	 	<description>幻灯片书籍标签 </description>
+ 	 	<name>slidebook</name>
+ 	 	<tag-class>com.tld.SlidebookTag</tag-class>
+ 	 	<!-- 标签体为空 -->    
+        <body-content>empty</body-content>
+ 	 	<attribute>
+	        <description>显示书籍的条数</description>
+	        <name>number</name>
+	        <required>true</required>
+	        <rtexprvalue>true</rtexprvalue>
+        </attribute>
+ 	 	<attribute>
+	        <description>幻灯片宽度</description>
+	        <name>width</name>
+	        <required>true</required>
+	        <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+	        <description>幻灯片高度</description>
+	        <name>height</name>
+	        <required>true</required>
+	        <rtexprvalue>true</rtexprvalue>
+        </attribute>
+	    <attribute>
+	        <description>基本URL</description>
+	        <name>baseurl</name>
+	        <required>false</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute> 
+	    <attribute>
+	        <description>在本页中当前幻灯片的序号</description>
+	        <name>slideno</name>
+	        <required>true</required>
+	        <rtexprvalue>true</rtexprvalue>
+	    </attribute>     
+ 	 </tag>
+ 	 
+ 	  <!-- FLV在线播放器标签 -->
+ 	<tag>
+    <description>FLV在线播放器标签</description>
+    <name>flvplayer</name>
+    <tag-class>com.eportal.tld.FlvPlayerTag</tag-class>
+	<!-- 标签体为空 -->    
+    <body-content>empty</body-content>
+    <attribute>
+        <description>red5服务器应用的完整访问路径</description>
+        <name>red5FullUrl</name>
+        <required>true</required>
+        <!-- 可以使用JSP表达式 -->
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <description>red5服务器的IP地址</description>
+        <name>red5ServerIp</name>
+        <required>true</required>
+        <!-- 可以使用JSP表达式 -->
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <description>FLV文件名</description>
+        <name>flvFilename</name>
+        <required>true</required>
+        <!-- 可以使用JSP表达式 -->
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>
+    <attribute>
+        <description>播放器封面图片文件,默认为red5服务器应用下的cover.jpg</description>
+        <name>picFilename</name>
+        <required>false</required>
+        <!-- 可以使用JSP表达式 -->
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>     
+    <attribute>
+        <description>播放器宽度,单位:像素,默认400</description>
+        <name>width</name>
+        <required>false</required>
+        <!-- 可以使用JSP表达式 -->
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>             
+    <attribute>
+        <description>播放器高度,单位:像素,默认300</description>
+        <name>height</name>
+        <required>false</required>
+        <!-- 可以使用JSP表达式 -->
+        <rtexprvalue>true</rtexprvalue>
+    </attribute>    
+  </tag>  
+  
+</taglib>

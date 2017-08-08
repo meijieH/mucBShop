@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="gbk"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+     <!-- 设置Action的请求扩展名为.action,防止Struts 2.1将无扩展名请求也当成正常的Action请求处理 -->
+    <constant name="struts.action.extension" value="action"/>
+	<!-- 设置Web应用的默认编码集为gbk -->
+	<constant name="struts.i18n.encoding" value="gbk"/>
+	<!-- 设置Web应用的默认Locale为zh_CN -->
+	<constant name="struts.locale" value="zh_CN" />
+	<!-- 设置Struts2应用的国际化资源文件，多个文件中间可用逗号分隔 -->
+	<constant name="struts.custom.i18n.resources" value="messageResource"/>
+	<!-- 设置Struts2默认的ObjectFactory为spring -->
+	<constant name="struts.objectFactory" value="spring" />
+	<!-- 设置Struts2应用是否处于开发模式，通常在开发调试阶段设为true,正式上线后可设为false -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 设置Struts2的默认主题为simple -->
+	<constant name="struts.ui.theme" value="simple" />
+
+	<!--前台管理页面  --> 
+    <package name="ebook" extends="struts-default" namespace="/webs">	
+		<action name="Student_*" class="studentAction" method="{1}">
+			<result name="input">/webs/{1}.jsp</result>
+			<result name="index" type="redirectAction">
+				<param name="actionName">Book_browseValidBooks</param>
+			</result>
+			<result name="toBrowseMyBooks" type="redirectAction">
+				<param name="actionName">Student_browseBooks</param>
+			</result>
+			<result name="viewMyShopList" type="redirectAction">
+				<param name="actionName">viewMyShopList</param>
+			</result>
+			<result name="tologin">login.jsp</result>
+			<result name="viewMyOrders">/webs/browseOrders.jsp</result>
+		</action>
+		
+		<action name="Book_*" class="bookAction" method="{1}">
+			<result name="index">/webs/index.jsp</result>
+			<result name="input">/webs/{1}.jsp</result>
+			<result name="book">/webs/addOrder.jsp</result>
+		</action>
+		
+		<action name="Order_*" class="orderAction" method="{1}">
+			<result name="input">/webs/{1}.jsp</result>
+			<result name="payOrder">/webs/payOrder.jsp</result>
+			<result name="toOrders" type="redirectAction">
+				<param name="actionName">Student_browseOrders</param>
+			</result>
+		</action>
+		
+		<action name="Appeal_*" class="appealAction" method="{1}">
+			<result name="input">/webs/{1}.jsp</result>
+		</action>
+		<!--update学生的登录密码  -->
+		<action name="updatePwd" class="studentAction" method="updatePassword">
+			<result name="input">/webs/updatePwd.jsp</result>
+		</action>	
+		
+		<!--查看购物车viewShopList  -->
+		<action name="viewMyShopList" class="studentAction" method="viewMyShopList">
+			<result name="input">/webs/viewMyShopList.jsp</result>
+		</action>
+															 		 		    
+    </package>
+    
+     <!-- 后台管理 -->
+    <package name="admin" extends="struts-default" namespace="/admin">
+		<action name="Book_*" class="bookAction" method="{1}">
+			<result name="adminIndex">/admin/browseUncheckedBooks.jsp</result>
+			<result name="toEditBook">/admin/editBook.jsp</result>
+			<result name="adminInput">/admin/{1}.jsp</result>		
+		</action>
+		
+		
+		<action name="Admin_*" class="adminAction" method="{1}">
+			<result name="input">/admin/{1}.jsp</result>
+			<result name="listStorage">/admin/Book_browseUncheckedBooks.jsp</result>
+			<result name="listUncheck">/admin/Book_browseUncheckedBooks.jsp</result>
+			<result name="listAppeals">/admin/browseAppeals.jsp</result>
+			<result name="login">/admin/index.jsp</result>
+		</action>		
+    </package>    
+</struts>

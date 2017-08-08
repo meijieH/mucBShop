@@ -1,0 +1,186 @@
+
+*{
+	font:14px/1.4286 "Microsoft YaHei";
+	font-family:Microsoft YaHei,Arial,Simsun !important;"
+	margin:0;
+	padding:0;
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+a:hover,a:focus{
+	color:#212121;
+	text-decoration: none;
+}
+/*admin login*/
+.form-horizontal{
+    border: solid 1px rgb(27,193,145);
+    border-radius:20px;
+    margin-top: 90px;
+}
+.form-horizontal .control-label{
+	font-size:17px;
+}
+/*按钮*/
+.btn-primary{
+	background-color: rgb(27,193,145);
+	border:solid 1px rgb(27,193,145);
+}
+.btn-primary:hover{
+	background-color: rgba(27,193,145,0.8);
+	border:solid 1px rgba(27,193,145,0.8);
+}
+.btn-primary:focus{
+	background-color: rgba(27,193,145,0.8);
+	border:solid 1px rgba(27,193,145,0.8);
+	outline: none;
+}
+/*index 左导航*/
+.admin_main_nav{
+    float: left;
+    width: 14%;
+    margin:6% 1%;
+}
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+    color: #fff;
+    background-color: rgb(27,193,145);
+    font-size: 16px;
+}
+.nav-pills>li>a, .nav-pills>li>a:hover, .nav-pills>li>a:focus {
+    color: rgb(27,193,145);
+    font-size: 16px;
+}
+/*所有的右框架标题在h1标签里*/
+h1{
+	color:rgb(27,193,145);
+}
+/*index 右框架*/
+#operation{
+	
+}
+#operation iframe{
+	width: 80%;
+	border: none;
+}
+/*框架内表格编号*/
+.number{
+	color:rgb(27,193,145);
+}
+/*框架内表格标题*/
+.table tbody>tr>th{
+	color:rgb(27,193,145);
+}
+/* DisplayTag CSS*/
+.displayTable{
+	text-align:left;
+	width:94%;
+	letter-spacing:1px;
+}
+.displayTable table{
+	background-color:#ffffff;
+	width: 100%;
+	border: 1px solid #848284;
+	margin:6px 0;
+}
+.displayTable th,.displayTable td {
+	padding: 1px 2px 1px 2px !important;
+	vertical-align: middle;
+	height:20px;	
+}
+.displayTable thead tr {
+	background-color: #D6D3CE;
+	text-align: center;
+	vertical-align: middle;
+	height:20px;
+}
+.displayTable th.sorted {
+	background-color: #D6D3CE;
+}
+.displayTable th a,.displayTable th a:visited {
+	color: black;
+}
+.displayTable th a:hover {
+	text-decoration: underline;
+	color: black;
+}
+.displayTable th.sorted a.displayTable ,th.sortable a {
+	background-position: right;
+	display: block;
+	width: 94%;
+}
+.displayTable th.sortable a {
+	background-image: url(../img/arrow_off.png);
+	background-repeat: no-repeat;	
+}
+.displayTable th.order1 a {
+	background-image: url(../img/arrow_down.png);
+	background-repeat: no-repeat;	
+}
+.displayTable th.order2 a {
+	background-image: url(../img/arrow_up.png);
+	background-repeat: no-repeat;	
+}
+.displayTable tr.odd {
+	background-color: #fff
+}
+.displayTable tr.tableRowEven,.displayTable tr.even {
+	background-color: #eee
+}
+.displayTable div.exportlinks {
+	background-color: #D6D3CE;
+	padding: 2px 4px 2px 4px;
+	margin: 2px 0 10px 0;
+	width: 94%;
+	font-family: "锟斤拷锟斤拷", System;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;	
+}
+.displayTable span.export {
+	padding: 0 4px 1px 20px;
+	cursor: pointer;
+	font-family: "", System;
+	font-size: 12px;
+	color: #000000;
+}
+.displayTable span.excel {
+	background-image: url(../img/ico_file_excel.png);
+	background-repeat: no-repeat;
+}
+.displayTable span.csv {
+	background-image: url(../img/ico_file_csv.png);
+	background-repeat: no-repeat;
+}
+.displayTable span.xml {
+	background-image: url(../img/ico_file_xml.png);
+	background-repeat: no-repeat;	
+}
+.displayTable span.pdf {
+	background-image: url(../img/ico_file_pdf.png);
+	background-repeat: no-repeat;
+}
+.displayTable span.rtf {
+	background-image: url(../img/ico_file_rtf.png);
+	background-repeat: no-repeat;	
+}
+.displayTable span.pagebanner {
+	background-color: #D6D3CE;
+	margin-top: 10px;
+	font-family: "", System;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;	
+}
+.displayTable span.pagelinks {
+	background-color: #D6D3CE;
+	border-top: none;
+	font-family: "", System;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;	
+}
+
+

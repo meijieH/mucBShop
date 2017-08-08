@@ -1,0 +1,295 @@
+
+/*页面基本属性*/
+*{
+	font:14px/1.4286 "Microsoft YaHei";
+	font-family:Microsoft YaHei,Arial,Simsun !important;"
+	margin:0;
+	padding:0;
+}
+body{
+	background-color:white;
+	/* background-image:url(../images/bcakground.jpg); */
+	background-repeat:repeat;
+}
+html, body {
+   width:100%;
+}
+
+/*按钮基本样式*/
+.btn{
+	line-height:30px;
+    width:100px;
+    text-align: center;
+    outline:none;
+}
+/*锚基本样式*/
+a{
+	text-decoration: none;
+}
+/*列表基本样式*/
+li{
+	list-style: none;
+}
+/*页面容器CSS样式*/
+.container{
+	width:1024px;
+	margin:0 auto;
+	background-color:none;
+}
+
+
+
+/*修改学生信息页面的css样式*/
+
+.diveditpanel{background-color:rgb(204,255,153);margin-top:10px;padding: 10px 10px 10px 10px;width: 150px;height:500px;float:left;background-color: white;border-radius:4px;}
+.diveditpanel .leftpanel_top{margin-bottom:10px;line-height:35px;background-color: white;border-radius:4px;font-size:20px;text-align: center;}
+.diveditpanel li{margin-bottom:1px;list-style:none;line-height:40px;background-color: rgba(204,255,153,0.5);border-radius:4px;text-align: center;}
+.diveditpanel li a{text-decoration: none;color:black;font-size:16px;}
+.diveditpanel img{height: 90px;width: 90px;padding: 2px 2px 2px 2px; border-bottom-color: white;}
+.showPersonInfo{margin-top:10px;background-color: white;width: 796px;height: 700px;border: 4px solid white;border-radius:4px;float:right;padding: 10px 20px 20px 20px;}
+.showPersonInfo form table tr rd{padding: 10px 10px 10px 10px;}
+.editpersonhead{background-color: rgb(229,254,203);color:black;line-height:40px;border:1px solid rgb(229,254,203);text-align:center;font-size:24px;border-radius:1px;}
+.editperson_submit{text-align: center;}
+.editperson_submit input{background-color: orange;width: 50px;height: 30px;font-family: fantasy;letter-spacing: 2px;font-size: 12px;color: white;}
+
+/*注册书籍页面的css样式*/
+.regBook_table{margin-top:10px;}
+.regBook_table td{text-align:left;}
+.regBook_table td input{width:460px;margin-bottom:10px;line-height:30px;}
+.regbook_submit{text-align: center;}
+.regbook_submit input{background-color: orange;width: 100px;height: 30px;font-family: fantasy;letter-spacing: 2px;font-size: 12px;color: white;}
+
+
+/*订书页面的css样式*/
+.addOrder_main{background-color: white;height:800px;width:100%;margin-top:10px; }
+.divsellerdescription{float:left;margin:10px 10px;width:200px;}
+.desc_sellerhead{background-color: rgb(128,128,128);color:orange;padding: 2px 5px 2px 5px ;width:200px;}
+.divbookpic{background-color:white;height: 420px;width: 420px;margin-top:10px ;margin-left:220px;position:absolute;}
+.divbookpic img{height:100%;width:100%;border-radius:4px;}
+.divbookdescription {float:right;margin:10px 10px 10px 10px;width:364px;}
+.divbookdescription table td{text-align: left;}
+.desc_bookhead{background-color: rgb(128,128,128);color:orange;padding: 2px 5px 2px 5px ;width:364px;}
+.addOrder_submit{margin:300px 900px;}
+.addOrder_submit  input{background-color: orange;width: 100px;height: 30px;font-family: fantasy;letter-spacing: 2px;font-size: 12px;color: white;}
+
+
+.adminshowdiv{margin: 100px auto auto 300px;position: absolute; }
+.adminshowdiv table{background-color:#ffffff;width: 100%;border: 1px solid #848284;margin:6px 0;}
+.adminshowdiv thead tr {
+	background-color: #D6D3CE;
+	text-align: center;
+	vertical-align: middle;
+	height:20px;
+}
+.adminshowdiv th.sorted {
+	background-color: #D6D3CE;
+}
+.adminshowdiv th a,.adminshowdiv th a:visited {
+	color: black;
+}
+.adminshowdiv th a:hover {
+	text-decoration: underline;
+	color: black;
+}
+.adminshowdiv th.sorted a.adminshowdiv ,th.sortable a {
+	background-position: right;
+	display: block;
+	width: 94%;
+}
+.adminshowdiv th.sortable a {
+	background-image: url(../img/arrow_off.png);
+	background-repeat: no-repeat;	
+}
+.adminshowdiv th.order1 a {
+	background-image: url(../img/arrow_down.png);
+	background-repeat: no-repeat;	
+}
+.adminshowdiv th.order2 a {
+	background-image: url(../img/arrow_up.png);
+	background-repeat: no-repeat;	
+}
+
+
+
+
+/*admin修改book信息页面css样式*/
+.photoarea{height: 500px;width: 400px;padding: 5px 5px 5px 5px;position: absolute;margin: 100px auto;}
+#bigphoto{height: 380px;width: 380px;}
+#bigphoto img{height: 380px;width: 380px;}
+#smallphotos{height: 100px;width: 400px;}
+#smallphotos table tr td{width: 100;height: 100;padding: 2px 2px 2px 2px;}
+#smallphotos table tr td img{width: 96px;height: 96px;}
+
+.booktextedit{position: absolute;margin: 100px auto auto 400px;width: 400px;padding: 2px 2px 2px 2px;}
+.booktextedit from table{border: 0px;}
+.booktextedit from table tr:FIRST-CHILD{width: 100px;}
+.booktextedit from table tr{padding: 5px auto 5px auto;}
+.book_editsavepass{background-color: orange;color: white;height: 25px;}
+
+/* DisplayTag CSS区 */
+.displayTable{text-align:left;width:100%;letter-spacing:1px;float:left;z-index: 100px;}
+.displayTable table{background-color:#ffffff;width: 100%;border: 1px solid white;margin:6px 0;}
+.displayTable th,.displayTable td {
+	vertical-align: middle;
+	height:20px;	
+}
+.displayTable thead tr {
+	background-color: rgba(204,255,153,1);
+	text-align: center;
+	vertical-align: middle;
+	height:20px;
+}
+.displayTable th.sorted {
+	background-color: rgba(204,255,153,0.5);
+}
+.displayTable th a,.displayTable th a:visited {
+	color: black;
+}
+.displayTable th a:hover {
+	text-decoration: underline;
+	color: black;
+}
+.displayTable th.sorted a.displayTable  {
+	background-position: right;
+	display: block;
+	width: 94%;
+}
+.displayTable th.sortable a {
+	text-align:center;
+	width:80px;
+	background-image: url(../img/arrow_off.png);
+	background-repeat: no-repeat;
+	text-decoration: none;	
+}
+
+.displayTable th.order1 a {
+	background-image: url(../img/arrow_down.png);
+	background-repeat: no-repeat;	
+}
+.displayTable th.order2 a {
+	background-image: url(../img/arrow_up.png);
+	background-repeat: no-repeat;	
+}
+.displayTable tr.odd {
+	background-color:white;
+}
+.displayTable tr.tableRowEven,.displayTable tr.even {
+	background-color: rgba(204,255,153,0.5);
+	
+	
+}
+.displayTable div.exportlinks {
+	background-color: #D6D3CE;
+	padding: 2px 4px 2px 4px;
+	margin: 2px 0 10px 0;
+	width: 94%;
+	font-family: "宋体", System;
+	font-size: 12px;
+	color: #000000;
+	text-decoration: none;	
+}
+.displayTable span.export {
+	padding: 0 4px 1px 20px;
+	cursor: pointer;
+	font-family: "宋体", System;
+	font-size: 12px;
+	color: #000000;
+}
+.displayTable span.excel {
+	background-image: url(../img/ico_file_excel.png);
+	background-repeat: no-repeat;
+}
+.displayTable span.csv {
+	background-image: url(../img/ico_file_csv.png);
+	background-repeat: no-repeat;
+}
+.displayTable span.xml {
+	background-image: url(../img/ico_file_xml.png);
+	background-repeat: no-repeat;	
+}
+.displayTable span.pdf {
+	background-image: url(../img/ico_file_pdf.png);
+	background-repeat: no-repeat;
+}
+.displayTable span.rtf {
+	background-image: url(../img/ico_file_rtf.png);
+	background-repeat: no-repeat;	
+}
+.displayTable span.pagebanner {
+	line-height:30px;
+	background-color:none;	
+	text-decoration: none;	
+}
+.displayTable span.pagelinks {
+	line-height:30px;
+	background-color:none;	
+	text-decoration: none;	
+}
+
+/*积分转让页面*/
+.lside{ height:379px;width: 796px;float:right;background-color:white;margin:10px 0 0 0 ;padding:10px  20px 0  20px;border-radius:4px;border:4px solid white;}
+.lside td{font-size: 20px;padding-top: 10px;}
+.lside input{font-size: 20px;padding: 3px 5px 3px 5px;outline: none;}
+.lside input[type='checkbox']{width: 20px;height: 20px;vertical-align: bottom;}
+.lside textarea{font-size: 24px;}
+.cfirmtrans_submit input{background-color: orange;width: 100px;height: 30px;font-family: fantasy;letter-spacing: 2px;font-size: 12px;color: white;}
+
+/**密码修改页面**/
+.updatepassword{text-align: center;}
+.updatepassword input[type="submit"]{background-color: orange;width: 100px;height: 30px;font-family: fantasy;letter-spacing: 2px;font-size: 12px;color: white;}
+
+
+
+
+
+
+/*后台维护管理的css样式*/
+.admin_title{text-align: center;padding: 20px auto;font-style: italic;font-family: fantasy;font-size: 48px;font-weight: bolder;}
+.admin_showpanel{position: absolute;margin-left:320px;width: 480px;background-color: white;height: 800px;margin-top: 100px;}	
+/* 表单容器 */
+.formDiv{text-align:left;width:94%;letter-spacing:1px;}
+.formDiv table{background-color:#D6D3CE;}
+.formDiv tr{height:26px;}
+
+
+/* 候梅洁added */
+*{
+	font-size:16px;
+	color:#6C6A6A;
+}
+.displayTable thead tr {
+    background-color: rgb(238,252,246);
+    text-align:center;
+    font-size:18px;
+    vertical-align: middle;
+    height: 40px;
+}
+.addOrder_main{
+	height:500px;
+}
+.desc_sellerhead {
+	text-align:center;
+    background-color:#02ba85;
+    color: white;
+    font-size:22px;
+    padding: 2px 5px 2px 5px;
+    width: 200px;
+}
+.desc_bookhead{
+	background-color:#02ba85;
+    color: white;
+    font-size:22px;
+}
+.divbookdescription table td {
+    text-align:center;
+}
+
+/*订单页面*/
+.payorder_main{
+	display:inline-block;
+	margin:100px;
+	width:30%;
+}
+
+
+
